@@ -1,5 +1,12 @@
+var quote;
+var paragraph = document.querySelector('.paragraph');
+var i = 1;
 async function call(){
-    response = await fetch("")
+        let response = await fetch(`https://api.adviceslip.com/advice/${i}`);
+        quote = await response.json();
+        console.log(quote.slip.advice)
+        paragraph.innerHTML = `${quote.slip.advice}`
+        i++;
 }
 
 var el = document.querySelector("#title");
@@ -20,6 +27,6 @@ function showtext(el, text, interval) {
 
     addChar();
 }
-
+call();
 showtext(el, text, interval);
 

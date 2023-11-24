@@ -9,10 +9,28 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #title{
     color: aliceblue;
 }
-
+.paragraph{
+    color: aliceblue;
+}
+.btn{
+    width: 100px;
+    background-color: aliceblue;
+    margin-top: 100px;
+    padding: 5px;
+    font-size: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 109px;
+    transition: transform 0.2s linear;
+    font-size: 12px;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
