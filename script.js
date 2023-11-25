@@ -1,12 +1,11 @@
 var quote;
 var paragraph = document.querySelector('.paragraph');
-var i = 1;
+
 async function call(){
-        let response = await fetch(`https://api.adviceslip.com/advice/${i}`);
+        let response = await fetch(`https://api.adviceslip.com/advice`);
         quote = await response.json();
         console.log(quote.slip.advice)
         paragraph.innerHTML = `${quote.slip.advice}`
-        i++;
 }
 
 var el = document.querySelector("#title");
