@@ -15,6 +15,7 @@
 
 #title{
     color: aliceblue;
+    margin:10px;
 }
 .paragraph{
     color: aliceblue;
@@ -27,7 +28,6 @@
     font-size: monospace;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 109px;
     transition: transform 0.2s linear;
     font-size: 12px;
 }
